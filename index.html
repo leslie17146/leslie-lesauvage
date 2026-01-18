@@ -8,33 +8,66 @@
     <link rel="stylesheet" href="assets/css/mon_site.css">
 </head>
 <body>
-    <div class="phone-container">
-        <div class="phone-screen">
-            <!-- Header -->
-            <div class="header">
-                <div class="location">
-                    <img src="assets/images/icons8-location-60.png" class="location-icon"></img>
-                    <div class="location-text">
-                        <div class="current">France</div>
-                        <div class="city">Paris</div>
-                    </div>
-                </div>
-                <img src="assets/images/Leslie Lesauvage.png" alt="Profil" class="profile-icon"></img>
-            </div>
-
-            <!-- Welcome Section -->
-            <div class="welcome">
+    <div class="container">
+        <!-- Sidebar pour desktop -->
+        <div class="sidebar">
+            <div class="profile-section">
+                <img src="assets/images/Leslie Lesauvage.png" alt="Leslie Lesauvage" class="profile-img">
                 <h1>Leslie<br><span class="name">Lesauvage</span></h1>
                 <div class="title">Étudiante en sciences des données</div>
+                
+                <div class="location">
+                    <img src="assets/images/icons8-location-60.png" class="location-icon">
+                    <div class="location-text">
+                        <div class="city">Paris, France</div>
+                    </div>
+                </div>
+                
+                <a href="#" class="projects-button" id="projects-link">
+                    Découvrir mes projets
+                </a>
             </div>
 
-            <!-- Projects Button -->
-            <a href="mes_projets.html" class="projects-button">
-                Découvrir mes projets
-            </a>
+            <!-- Navigation pour desktop -->
+            <nav class="desktop-nav">
+                <div class="nav-item active" data-target="cv">
+                    <i class="fas fa-file-alt"></i>
+                    <span>CV</span>
+                </div>
+                <div class="nav-item" data-target="formations">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Formations</span>
+                </div>
+                <div class="nav-item" data-target="experiences">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Expériences</span>
+                </div>
+                <div class="nav-item" data-target="engagement">
+                    <i class="fas fa-hands-helping"></i>
+                    <span>Engagement</span>
+                </div>
+                <div class="nav-item" data-target="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </div>
+            </nav>
+        </div>
 
-            <!-- Categories -->
-            <div class="categories">
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Mobile Header -->
+            <div class="mobile-header">
+                <div class="location">
+                    <img src="assets/images/icons8-location-60.png" class="location-icon">
+                    <div class="location-text">
+                        <div class="city">Paris, France</div>
+                    </div>
+                </div>
+                <img src="assets/images/Leslie Lesauvage.png" alt="Profil" class="profile-icon">
+            </div>
+
+            <!-- Mobile Categories -->
+            <div class="categories mobile-only">
                 <div class="category active" data-target="cv">
                     <div class="category-icon">
                         <i class="fas fa-file-alt"></i>
@@ -67,12 +100,22 @@
                 </div>
             </div>
 
-        <!-- CV Section -->
+            <!-- Mobile Projects Button -->
+            <a href="#" class="projects-button mobile-only" id="projects-link-mobile">
+                Découvrir mes projets
+            </a>
+
+            <!-- CV Section -->
             <div class="content-section active" id="cv">
-                
+                <div class="section-title">
+                    <h2>Mon CV</h2>
+                </div>
+                <div class="cv-content">
+                    <p>Section CV à compléter...</p>
+                </div>
             </div>
 
-        <!-- Formations Section -->
+            <!-- Formations Section -->
             <div class="content-section" id="formations">
                 <div class="section-title">
                     <h2>Mes formations</h2>
@@ -103,7 +146,7 @@
                     <div class="card" data-modal="licence">
                         <div class="card-header">
                             <div>
-                                <div class="card-title">DEUG</div>
+                                <div class="card-title">Licence d'Économie et de Gestion</div>
                                 <div class="card-subtitle">Université Grenoble Alpes</div>
                             </div>
                             <div class="card-date">2023-2025</div>
@@ -122,85 +165,30 @@
                 </div>
             </div>
 
-            <!-- Modal for Formation Details -->
-    <div class="modal" id="masterModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2 class="modal-title">Cycle Pluridisciplinaire d'Études Supérieures</h2>
-            <div class="modal-subtitle">Lycée Louis Le Grand - Université Paris Sciences et Lettres</div>
-            <div class="modal-date">2023-2026</div>
-            
-            <div class="modal-section">
-                <h3 class="modal-section-title">Description du Programme</h3>
-                <p>
-                    Le Cycle Pluridisciplinaire d'Études Supérieures Sciences des données est né d'un partenariat local entre l'université Paris Sciences & Lettres et le lycée Louis-le-Grand. Au même titre que les CPGE, la première année du CPES est hébergée au lycée. 
-                    Au CPES Sciences des données, j'étudie principalement les mathématiques, l'informatique et plus précisément intelligence artificielle, mais aussi l'économie et le développement durable.
-                    Les cours de deuxième et troisième année sont à la fois dispensés par les professeurs de CPGE du lycée Louis-le-Grand et par des enseignants-chercheurs de l'École Normale Supérieure (établissement-composante de l'université PSL).
-                </p>
-            </div>
-            
-            <div class="modal-section">
-                <h3 class="modal-section-title">Projets Réalisés</h3>
-                <ul class="modal-list">
-                    <li><strong>Système de recommandation avancé</strong> : Développement d'un algorithme hybride combinant filtrage collaboratif et analyse de contenu</li>
-                    <li><strong>Application de gestion de données massives</strong> : Conception d'une architecture microservices pour le traitement de flux de données en temps réel</li>
-                    <li><strong>Interface de visualisation de données</strong> : Création d'un dashboard interactif avec D3.js et React</li>
-                </ul>
-            </div>
-            
-            <div class="modal-section">
-                <h3 class="modal-section-title">Compétences Acquises</h3>
-                <div class="card-tags">
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">TensorFlow</span>
-                    <span class="tag">React</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">MongoDB</span>
-                    <span class="tag">Docker</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal for Licence Details -->
-    <div class="modal" id="licenceModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2 class="modal-title">DEUG</h2>
-            <div class="modal-subtitle">Université Grenoble Alpes</div>
-            <div class="modal-date">2023-2025</div>
-            
-            <div class="modal-section">
-                <h3 class="modal-section-title">Parcours Académique</h3>
-                <p>Passionnée par l'économie, j'étudiais cette discipline en autonomie. Dans le but d'avoir accès à un enseignement de qualité, de pouvoir échanger avec des enseignants chercheurs spécialisés et de valoriser ce travail, j'ai décidé de m'inscrire en licence d'économie. Par manque de temps et en raison de l'année décisive que constitue le L3 de CPES, j'ai décidé de mettre en pause cette licence. Actuellement diplomée d'un DEUG, je prévoir de poursuivre cette enseignement dans le futur.</p>
-            </div>
-        </div>
-    </div>
-
             <!-- Expériences Section -->
             <div class="content-section" id="experiences">
                 <div class="section-title">
                     <h2>Mes expériences professionnelles</h2>
                 </div>
                 <div class="cards">
-                    <div class="card">
+                    <div class="card" data-modal="job">
                         <div class="card-header">
                             <div>
                                 <div class="card-title">Agente contractuelle</div>
                                 <div class="card-subtitle">Direction départementale des territoires et de la mer</div>
                             </div>
-                            <div class="card-date">août 2023</div>
-                            <div class="card-date">juillet 2024</div>
+                            <div class="card-date">août 2023 & juillet 2024</div>
                         </div>
                         <div class="card-description">
-                            Études des déclarations des agriculteurs dans le cadre de la Politique agricole commune. 
+                            Études des déclarations des agriculteurs dans le cadre de la Politique agricole commune.
                         </div>
                         <div class="card-tags">
                             <span class="tag">Excel</span>
+                            <span class="tag">IA</span>
+                            <span class="tag">Formation</span>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-modal="internship">
                         <div class="card-header">
                             <div>
                                 <div class="card-title">Stagiaire Data Engineer</div>
@@ -208,28 +196,17 @@
                             </div>
                             <div class="card-date">Juin - Juillet 2025</div>
                         </div>
+                        <div class="card-description">
+                            Automatisation de la bibliothèque électronique du Centre de connaissance OMS.
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Data Engineering</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-                <!-- Modal for Internship Details -->
-    <div class="modal" id="internshipModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2 class="modal-title">Stagiaire Data Engineer</h2>
-            <div class="modal-subtitle">Santé Publique France</div>
-            <div class="modal-date">Juin - Juillet 2025</div>
-            
-            <div class="modal-section">
-                <h3 class="modal-section-title">Parcours Académique</h3>
-                <p>
-                    En 2003, 183 pays ont signé la Convention-Cadre de l’OMS pour la Lutte Anti-Tabac (CCLAT). La France héberge le WHO FCTC Knowledge Hub for Public Awareness, chargé de soutenir les pays dans la mise en œuvre de l’article 12, consacré à la communication et à l’éducation du public sur les dangers du tabac.
-                    Dans ce cadre, ma mission principale a été l'automatisation la bibliothèque électronique du Hub. J'ai crée un outil qui interroge les API de PubMed pour identifier les articles scientifiques les plus pertinents, extraire les informations clefs, les catégoriser automatiquement et en produire un résumé synthétique. Par la suite, j'ai formé l'équipe du Hub à l'utilisation de cet outil.
-                    J’ai également contribué à la rédaction du Global Progress Report 2025, qui dresse tous les deux ans un état des lieux mondial de la mise en œuvre de la CCLAT. En lien avec l'article 12, j'ai analysé les données qualitatives issues des rapports nationaux et sélectionné des cas d’étude représentatifs des bonnes pratiques.
-                </p>
-            </div>
-        </div>
-    </div>
 
             <!-- Engagement Section -->
             <div class="content-section" id="engagement">
@@ -237,7 +214,7 @@
                     <h2>Engagements & Bénévolat</h2>
                 </div>
                 <div class="cards">
-                    <div class="card">
+                    <div class="card" data-modal="volunteer">
                         <div class="card-header">
                             <div>
                                 <div class="card-title">De la Charente-Maritime aux Grandes Écoles</div>
@@ -246,8 +223,12 @@
                             <div class="card-date">septembre 2024-Présent</div>
                         </div>
                         <div class="card-description">
-                            Création et mise à jour du site internet (Wordpress), création de contenu sur les réseaux sociaux et organisation d'un voyage à destination de 30 lycéens de Charente-Maritime, venus découvrir les grandes écoles parisiennes.
-                            La Fédération Des Territoires aux Grandes Écoles regroupe 60 associations départementales unies par une ambition commune : l'égalité des chances et le développement économique des territoires.d'étudiants en programmation, organisation d'ateliers 
+                            Promotion de l'égalité des chances auprès des lycéens de Charente-Maritime.
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag">Communication</span>
+                            <span class="tag">Éducation</span>
+                            <span class="tag">Mentorat</span>
                         </div>
                     </div>
                 </div>
@@ -272,6 +253,157 @@
             </div>
         </div>
     </div>
-<script src="assets/js/mon_site.js"></script>
+
+    <!-- Modals -->
+    <div class="modal" id="masterModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Cycle Pluridisciplinaire d'Études Supérieures</h2>
+            <div class="modal-subtitle">Lycée Louis Le Grand - Université Paris Sciences et Lettres</div>
+            <div class="modal-date">2023-2026</div>
+            
+            <div class="modal-section">
+                <h3 class="modal-section-title">Description du Programme</h3>
+                <p>
+                    Le Cycle Pluridisciplinaire d'Études Supérieures Sciences des données est né d'un partenariat local entre l'université Paris Sciences & Lettres et le lycée Louis-le-Grand. Au même titre que les CPGE, la première année du CPES est hébergée au lycée. 
+                    Au CPES Sciences des données, j'étudie principalement les mathématiques, l'informatique et plus précisément intelligence artificielle, mais aussi l'économie et le développement durable.
+                    Les cours de deuxième et troisième année sont à la fois dispensés par les professeurs de CPGE du lycée Louis-le-Grand et par des enseignants-chercheurs de l'École Normale Supérieure (établissement-composante de l'université PSL).
+                </p>
+            </div>            
+            <div class="modal-section">
+                <h3 class="modal-section-title">Compétences Acquises</h3>
+                <div class="card-tags">
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Statistiques</span>
+                    <span class="tag">Data visualisation</span>
+                    <span class="tag">Data engineering</span>
+                    <span class="tag">Prompt engineering</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="licenceModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Licence d'Économie et de Gestion</h2>
+            <div class="modal-subtitle">Université Grenoble Alpes</div>
+            <div class="modal-date">2023-2025</div>
+            
+            <div class="modal-section">
+                <h3 class="modal-section-title">Parcours Académique</h3>
+                <p>Passionnée par l'économie, j'étudiais cette discipline en autonomie. Dans le but d'avoir accès à un enseignement de qualité, de pouvoir échanger avec des enseignants chercheurs spécialisés et de valoriser ce travail, j'ai décidé de m'inscrire en licence d'économie. Par manque de temps et en raison de l'année décisive que constitue le L3 de CPES, j'ai décidé de mettre en pause cette licence. Actuellement diplomée d'un DEUG, je prévoir de poursuivre cette enseignement dans le futur.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="jobModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Agente contractuelle</h2>
+            <div class="modal-subtitle">Direction départementale des territoires et de la mer</div>
+            <div class="modal-date">août 2023 & juillet 2024</div>
+            
+            <div class="modal-section">
+                <h3 class="modal-section-title">Description</h3>
+                <p>
+                    Dans le cadre de l'application de la Politique Agricole Commune, j'ai supervisé le traitement initial des déclarations des agriculteurs réalisé par une intelligence artificielle, en intervenant pour gérer les tâches qu'elle ne pouvait pas traiter. J'ai également effectué des vérifications sur le terrain. De plus, j'ai assuré une formation à l'équipe sur l'utilisation du nouveau matériel informatique.
+                </p>
+            </div>
+            
+            <div class="modal-section">
+                <h3 class="modal-section-title">Compétences Acquises</h3>
+                <div class="card-tags">
+                    <span class="tag">Excel</span>
+                    <span class="tag">QGIS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="internshipModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Stagiaire Data Engineer</h2>
+            <div class="modal-subtitle">Santé Publique France</div>
+            <div class="modal-date">Juin - Juillet 2025</div>
+            
+            <div class="modal-section">
+                <h3 class="modal-section-title">Description</h3>
+                <p>
+                    En 2003, 183 pays ont signé la Convention-Cadre pour la Lutte Anti-Tabac (CCLAT) de l'Organisation Mondiale de la Santé (OMS). Santé publique France héberge le Centre de connaissance de la CCLAT de l'OMS dédié à la sensibilisation du public. Ce pôle est donc chargé de soutenir les pays dans la communication et à l'éducation du public sur les dangers du tabac.
+                </p>
+                <p>
+                    Dans ce cadre, ma mission principale a été l'automatisation de la bibliothèque électronique du centre de connaissance français. J'ai créé un outil qui interroge les API de PubMed pour identifier les articles scientifiques les plus pertinents, extraire les informations clefs, les catégoriser automatiquement et en produire un résumé synthétique. Par la suite, j'ai formé l'équipe à l'utilisation de cet outil par la rédaction d'un Vademeccum, d'une explication technique de la stratégie d'alimentation mise en place mais aussi en menant une formation orale de l'équipe.
+                </p>
+                <p>
+                    J'ai également contribué largement à la rédaction du Global Progress Report 2025, qui dresse tous les deux ans un état des lieux mondial de la mise en œuvre de la CCLAT. En lien avec le Centre de connaissance dédié à la sensibilisation du public, j'ai analysé les données qualitatives issues des rapports nationaux et sélectionné des cas d'étude représentatifs des bonnes pratiques. A posteriori de mon stage, j'ai été invitée par Santé publique France pour présenter la bibliothèque électronique aux différents membres des gouvernements signataires de la CCLAT, en visio-conférence.
+                </p>
+            </div>
+            
+            <div class="modal-section">
+                <h3 class="modal-section-title">Compétences</h3>
+                <div class="card-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">API</span>
+                    <span class="tag">Data Engineering</span>
+                    <span class="tag">Prompt engineering</span>
+                    <span class="tag">RCommunication</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="volunteerModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Responsable du pôle communication</h2>
+            <div class="modal-subtitle">De la Charente-Maritime aux Grandes Écoles</div>
+            <div class="modal-date">septembre 2024 - Présent</div>
+            
+            <div class="modal-section">
+                <h3 class="modal-section-title">Description</h3>
+                <p>
+                    La Fédération des territoires aux grandes écoles regroupe soixante associations départementales qui ont une ambition commune : l'égalité des chances. Membre du bureau de celle de Charente-Maritime depuis deux ans, j'ai supervisé l'organisation de deux séjours permettant à quarante lycéens charentais-maritimes de découvrir les grandes écoles parisiennes, comme j'en ai moi-même bénéficié en 2022. J'ai également initié un concours d'éloquence.
+                </p>
+                <p>
+                    De plus, j'interviens dans les lycées de Charente-Maritime où je tiens des discours promouvant l'égalité des chances et présentant des parcours peu mis en avant dans ces lycées. Enfin, dans ce cadre, j'ai accompagné de près un élève de terminale dans son orientation post-bac.
+                </p>
+            </div>
+            
+            <div class="modal-section">
+                <h3 class="modal-section-title">Responsabilités</h3>
+                <ul class="modal-list">
+                    <li>Organisation de séjours découverte pour lycéens</li>
+                    <li>Initiation et coordination d'un concours d'éloquence</li>
+                    <li>Interventions dans les lycées pour promouvoir l'égalité des chances</li>
+                    <li>Accompagnement personnalisé d'élèves dans leur orientation</li>
+                    <li>Gestion du pôle communication de l'association</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour les projets en construction -->
+    <div class="modal" id="projectsModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Page en construction</h2>
+            
+            <div class="modal-section">
+                <div class="construction-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <p class="construction-text">
+                    La page des projets est actuellement en construction et sera bientôt disponible. 
+                </p>
+                <p class="construction-text">
+                    Revenez bientôt pour découvrir mes réalisations en sciences des données !
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/mon_site.js"></script>
 </body>
 </html>
