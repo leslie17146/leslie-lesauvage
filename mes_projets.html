@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets Personnels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/mes_projets.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="phone-screen">
+            <!-- Header -->
+            <div class="header">
+                <div class="back-button" id="backButton">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="page-title">Mes projets</div>
+                <img src="assets/images/Leslie Lesauvage.png" alt="Profil" class="profile-icon"></img>
+                </div>
+            </div>
+
+            <!-- Gallery -->
+            <div class="gallery">
+                <!-- Projet 1 -->
+                <div class="project-card" data-modal="projet1">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Application de Gestion de Tâches" class="project-image">
+                    <div class="project-info">
+                        <div class="project-title">Public opinion on new technologies : is the idea of continuous progress being called into question ?</div>
+                        <div class="project-category">Analyse de données descriptive</div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card" data-modal="projet2">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Analyse de Données" class="project-image">
+                    <div class="project-info">
+                        <div class="project-title">Prédire le prix d'une maison</div>
+                        <div class="project-category">Analyse de données prédictives</div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card" data-modal="projet3">
+                    <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Application Mobile" class="project-image">
+                    <div class="project-info">
+                        <div class="project-title">La publicité dans la presse générale et professionnelle</div>
+                        <div class="project-category">Analyse de données descriptives</div>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="project-card" data-modal="projet4">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="IA et Machine Learning" class="project-image">
+                    <div class="project-info">
+                        <div class="project-title">Jeu vidéo sur le sculpteur Rodin</div>
+                        <div class="project-category">Jeu vidéo</div>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="project-card" data-modal="projet5">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Site E-commerce" class="project-image">
+                    <div class="project-info">
+                        <div class="project-title">Les collaborations universitaires entre les États-Unis et la France</div>
+                        <div class="project-category">Analyse de données descriptives</div>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="project-card" data-modal="projet6">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Jeu Vidéo" class="project-image">
+                    <div class="project-info">
+                        <div class="project-title">Étude de marché des porcelaines de Sèvres</div>
+                        <div class="project-category">Analyse de données descriptives</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 1 -->
+    <div class="modal" id="projet1Modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="TaskMaster Pro" class="modal-image">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title">L'opinion publique sur les nouvelles technologies : vers une remise en question du progrès continu ?</h2>
+                <div class="modal-subtitle">Analyse de données descriptives</div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du Projet</h3>
+                    <p class="modal-text">L’objectif est d’expliquer pourquoi certaines personnes rejettent les nouvelles technologies malgré leur diffusion croissante. 
+                        Le travail cherche à tester si ce rejet s’accentue avec le temps, s’il est lié à une méfiance envers les nouvelles technologies, et si la capacité d’adaptation des individus (exposition au changement) influence leur rapport à l’innovation. </p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
+                    <p class="modal-text">L’étude combine deux sources de données : le World Value Survey de 1981 à 2022 et un questionnaire original administré à 247 répondants. Deux types d’analyses statistiques ont été menés : une régression linéaire simple pour mesurer l’évolution des opinions dans le temps, puis une régression linéaire multivariée pour tester les hypothèses liées aux inquiétudes et à la capacité d’adaptation. </p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Technologies Utilisées</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">création d’un score de réticence construit à partir de réponses normalisées</span>
+                        <span class="tech-tag">modèles de régression (simple et multivariée)</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="report_LESAUVAGE05.pdf" class="action-button button-secondary">
+                        <i class="fas fa-file-pdf"></i>Consulter le rapport original en Anglais (PDF)
+                    </a>
+                    <a href="rapport_LESAUVAGE05.pdf" class="action-button button-secondary">
+                        <i class="fas fa-file-pdf"></i>Consulter le rapport traduit en Français (PDF)
+                    </a>
+                    <a href="https://www.kaggle.com/datasets/leslie17146/opinions-on-new-technologies" class="action-button button-primary">
+                        <i class="fas fa-external-link-alt"></i>Consulter le jeu de données collecté
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 2 -->
+    <div class="modal" id="projet2Modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="DataInsight" class="modal-image">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title">DataInsight</h2>
+                <div class="modal-subtitle">Plateforme d'analyse et visualisation de données</div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du Projet</h3>
+                    <p class="modal-text">Créer une plateforme permettant aux entreprises d'importer, analyser et visualiser leurs données métier sans compétences techniques avancées.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
+                    <p class="modal-text">Approche centrée utilisateur avec tests utilisateurs réguliers. Développement en Python avec intégration de bibliothèques de data science.</p>
+                    <ul class="modal-list">
+                        <li>Collecte et prétraitement des données avec Pandas</li>
+                        <li>Analyse statistique avec Scikit-learn et Statsmodels</li>
+                        <li>Visualisations interactives avec Plotly et D3.js</li>
+                        <li>Interface utilisateur avec Streamlit</li>
+                        <li>Déploiement avec Docker sur AWS</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Technologies Utilisées</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="#" class="action-button button-primary">
+                        <i class="fas fa-external-link-alt"></i>Voir la démo en ligne
+                    </a>
+                    <a href="#" class="action-button button-secondary">
+                        <i class="fas fa-file-pdf"></i>Télécharger le rapport technique
+                    </a>
+                    <a href="#" class="action-button button-secondary">
+                        <i class="fab fa-github"></i>Code source sur GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 3 -->
+    <div class="modal" id="projet3Modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="EcoTrack" class="modal-image">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title">EcoTrack</h2>
+                <div class="modal-subtitle">Application mobile de suivi d'empreinte écologique</div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du Projet</h3>
+                    <p class="modal-text">Développer une application mobile permettant aux utilisateurs de suivre et réduire leur empreinte carbone grâce à des défis écologiques et des conseils personnalisés.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
+                    <p class="modal-text">Développement cross-platform avec React Native. Intégration d'APIs externes pour le calcul d'empreinte carbone.</p>
+                    <ul class="modal-list">
+                        <li>Conception UX/UI avec Adobe XD</li>
+                        <li>Développement frontend avec React Native</li>
+                        <li>Backend en Firebase pour l'authentification et le stockage</li>
+                        <li>Intégration d'API de données environnementales</li>
+                        <li>Tests sur appareils iOS et Android</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Technologies Utilisées</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Redux</span>
+                        <span class="tech-tag">API REST</span>
+                        <span class="tech-tag">Jest</span>
+                        <span class="tech-tag">Expo</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="#" class="action-button button-primary">
+                        <i class="fab fa-app-store"></i>Télécharger sur l'App Store
+                    </a>
+                    <a href="#" class="action-button button-primary">
+                        <i class="fab fa-google-play"></i>Télécharger sur Google Play
+                    </a>
+                    <a href="#" class="action-button button-secondary">
+                        <i class="fas fa-file-pdf"></i>Documentation du projet
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ajoutez les autres modals de la même manière -->
+
+    <script src="assets/js/mes_projets.js"></script>
+</body>
+</html>
