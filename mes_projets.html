@@ -3,46 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Projets Personnels</title>
+    <title>Mes Projets - Leslie Lesauvage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/mes_projets.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/icons8-education-80.png">
 </head>
 <body>
-    <div class="phone-container">
-        <div class="phone-screen">
-            <!-- Header -->
-            <div class="header">
-                <div class="back-button" id="backButton">
+    <div class="container">
+        <!-- Sidebar pour desktop -->
+        <div class="sidebar">
+            <div class="profile-section">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Retour au profil</span>
+                </a>
+                <img src="assets/images/Leslie Lesauvage.png" alt="Leslie Lesauvage" class="profile-img">
+                <h1>Mes<br><span class="name">Projets</span></h1>
+                <div class="title">Étudiante en sciences des données</div>
+                
+                <div class="location">
+                    <img src="assets/images/icons8-location-60.png" class="location-icon">
+                    <div class="location-text">
+                        <div class="city">Paris, France</div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Mobile back button -->
+            <div class="mobile-back" id="backButton">
+                <i class="fas fa-arrow-left"></i>
+                <span>Retour</span>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Mobile Header -->
+            <div class="mobile-header">
+                <div class="back-button" id="mobileBackButton">
                     <i class="fas fa-arrow-left"></i>
                 </div>
                 <div class="page-title">Mes projets</div>
-                <img src="assets/images/Leslie Lesauvage.png" alt="Profil" class="profile-icon"></img>
-                </div>
+                <img src="assets/images/Leslie Lesauvage.png" alt="Profil" class="profile-icon">
+            </div>
+
+            <!-- Mobile Categories -->
+            <div class="categories mobile-only">
+                <!-- Navigation mobile similaire à la version desktop -->
             </div>
 
             <!-- Gallery -->
             <div class="gallery">
                 <!-- Projet 1 -->
                 <div class="project-card" data-modal="projet1">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Application de Gestion de Tâches" class="project-image">
+                    <img src="assets/images/casque-realite-virtuelle.jpg" alt="Opinion publique sur les nouvelles technologies" class="project-image">
+                    <div class="project-date">2024</div>
                     <div class="project-info">
-                        <div class="project-title">Public opinion on new technologies : is the idea of continuous progress being called into question ?</div>
-                        <div class="project-category">Analyse de données descriptive</div>
+                        <div class="project-title">L'opinion publique sur les nouvelles technologies : une remise en cause du progrès technique ?</div>
+                        <div class="project-category">Analyse de données</div>
                     </div>
                 </div>
 
                 <!-- Projet 2 -->
                 <div class="project-card" data-modal="projet2">
-                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Analyse de Données" class="project-image">
+                    <img src="assets/images/houses.jpg" alt="Prédiction prix maison" class="project-image">
+                    <div class="project-date">2024</div>
                     <div class="project-info">
                         <div class="project-title">Prédire le prix d'une maison</div>
-                        <div class="project-category">Analyse de données prédictives</div>
+                        <div class="project-category">Prédiction de données</div>
                     </div>
                 </div>
 
                 <!-- Projet 3 -->
                 <div class="project-card" data-modal="projet3">
-                    <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Application Mobile" class="project-image">
+                    <img src="/assets/images/presse.jpg" alt="Publicité presse" class="project-image">
+                    <div class="project-date">2026</div>
                     <div class="project-info">
                         <div class="project-title">La publicité dans la presse générale et professionnelle</div>
                         <div class="project-category">Analyse de données descriptives</div>
@@ -51,7 +87,8 @@
 
                 <!-- Projet 4 -->
                 <div class="project-card" data-modal="projet4">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="IA et Machine Learning" class="project-image">
+                    <img src="assets/images/rodin.png" alt="Jeu Rodin" class="project-image">
+                    <div class="project-date">2024</div>
                     <div class="project-info">
                         <div class="project-title">Jeu vidéo sur le sculpteur Rodin</div>
                         <div class="project-category">Jeu vidéo</div>
@@ -60,19 +97,41 @@
 
                 <!-- Projet 5 -->
                 <div class="project-card" data-modal="projet5">
-                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Site E-commerce" class="project-image">
+                    <img src="/assets/images/france-us.webp" alt="Collaborations universitaires" class="project-image">
+                    <div class="project-date">2026</div>
                     <div class="project-info">
                         <div class="project-title">Les collaborations universitaires entre les États-Unis et la France</div>
-                        <div class="project-category">Analyse de données descriptives</div>
+                        <div class="project-category">Analyse de données</div>
                     </div>
                 </div>
 
                 <!-- Projet 6 -->
                 <div class="project-card" data-modal="projet6">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Jeu Vidéo" class="project-image">
+                    <img src="/assets/images/porcelaine.jpg" alt="Porcelaines Sèvres" class="project-image">
+                    <div class="project-date">2026</div>
                     <div class="project-info">
                         <div class="project-title">Étude de marché des porcelaines de Sèvres</div>
-                        <div class="project-category">Analyse de données descriptives</div>
+                        <div class="project-category">Analyse de données</div>
+                    </div>
+                </div>
+
+                <!-- Projet 7 -->
+                <div class="project-card" data-modal="projet7">
+                    <img src="assets/images/coup-de-pousse.PNG" alt="Coup de Pousse" class="project-image">
+                    <div class="project-date">2026</div>
+                    <div class="project-info">
+                        <div class="project-title">Coup de Pousse - Outil de génération de plan de jardinage</div>
+                        <div class="project-category">IA</div>
+                    </div>
+                </div>
+
+                <!-- Projet 8 -->
+                <div class="project-card" data-modal="projet8">
+                    <img src="/assets/images/badinter.avif" alt="Peine de mort" class="project-image">
+                    <div class="project-date">2024</div>
+                    <div class="project-info">
+                        <div class="project-title">L'opinion sur la peine de mort</div>
+                        <div class="project-category">Analyse de données</div>
                     </div>
                 </div>
             </div>
@@ -83,7 +142,7 @@
     <div class="modal" id="projet1Modal">
         <div class="modal-content">
             <div class="modal-header">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="TaskMaster Pro" class="modal-image">
+                <img src="assets/images/casque-realite-virtuelle.jpg" alt="Opinion publique sur les nouvelles technologies" class="modal-image">
                 <span class="close-modal">&times;</span>
             </div>
             <div class="modal-body">
@@ -91,34 +150,37 @@
                 <div class="modal-subtitle">Analyse de données descriptives</div>
                 
                 <div class="modal-section">
-                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du Projet</h3>
-                    <p class="modal-text">L’objectif est d’expliquer pourquoi certaines personnes rejettent les nouvelles technologies malgré leur diffusion croissante. 
-                        Le travail cherche à tester si ce rejet s’accentue avec le temps, s’il est lié à une méfiance envers les nouvelles technologies, et si la capacité d’adaptation des individus (exposition au changement) influence leur rapport à l’innovation. </p>
+                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du projet</h3>
+                    <p class="modal-text">L'objectif est d'expliquer pourquoi certaines personnes rejettent les nouvelles technologies malgré leur diffusion croissante. 
+                        Le travail cherche à tester si ce rejet s'accentue avec le temps, s'il est lié à une méfiance envers les nouvelles technologies, et si la capacité d'adaptation des individus (exposition au changement) influence leur rapport à l'innovation.</p>
                 </div>
                 
                 <div class="modal-section">
                     <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
-                    <p class="modal-text">L’étude combine deux sources de données : le World Value Survey de 1981 à 2022 et un questionnaire original administré à 247 répondants. Deux types d’analyses statistiques ont été menés : une régression linéaire simple pour mesurer l’évolution des opinions dans le temps, puis une régression linéaire multivariée pour tester les hypothèses liées aux inquiétudes et à la capacité d’adaptation. </p>
+                    <p class="modal-text">L'étude combine deux sources de données : le World Value Survey de 1981 à 2022 et un questionnaire original administré à 247 répondants. Deux types d'analyses statistiques ont été menés : une régression linéaire simple pour mesurer l'évolution des opinions dans le temps, puis une régression linéaire multivariée pour tester les hypothèses liées aux inquiétudes et à la capacité d'adaptation.</p>
                 </div>
                 
                 <div class="modal-section">
-                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Technologies Utilisées</h3>
+                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Compétences mobilisées</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">création d’un score de réticence construit à partir de réponses normalisées</span>
-                        <span class="tech-tag">modèles de régression (simple et multivariée)</span>
-                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Création d'un score de réticence</span>
+                        <span class="tech-tag">Modèles de régression</span>
+                        <span class="tech-tag">Collecte de données</span>
+                        <span class="tech-tag">Statistiques</span>
+                        <span class="tech-tag">Communication</span>
                     </div>
                 </div>
                 
                 <div class="action-buttons">
-                    <a href="report_LESAUVAGE05.pdf" class="action-button button-secondary">
-                        <i class="fas fa-file-pdf"></i>Consulter le rapport original en Anglais (PDF)
+                    <h3 class="modal-section-title">Découvrir les résultats</h3>
+                    <a href="assets/pdf/report_LESAUVAGE05.pdf" class="action-button button-secondary">
+                        <i class="fas fa-file-pdf"></i>Rapport original (Anglais - PDF)
                     </a>
-                    <a href="rapport_LESAUVAGE05.pdf" class="action-button button-secondary">
-                        <i class="fas fa-file-pdf"></i>Consulter le rapport traduit en Français (PDF)
+                    <a href="assets/pdf/rapport_LESAUVAGE05.pdf" class="action-button button-secondary">
+                        <i class="fas fa-file-pdf"></i>Rapport traduit (Français - PDF)
                     </a>
-                    <a href="https://www.kaggle.com/datasets/leslie17146/opinions-on-new-technologies" class="action-button button-primary">
-                        <i class="fas fa-external-link-alt"></i>Consulter le jeu de données collecté
+                    <a href="https://www.kaggle.com/datasets/leslie17146/opinions-on-new-technologies" target="_blank" class="action-button button-primary">
+                        <i class="fas fa-external-link-alt"></i>Jeu de données (Kaggle)
                     </a>
                 </div>
             </div>
@@ -129,114 +191,294 @@
     <div class="modal" id="projet2Modal">
         <div class="modal-content">
             <div class="modal-header">
-                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="DataInsight" class="modal-image">
+                <img src="assets/images/houses.jpg" alt="Prédiction prix maison" class="modal-image">
                 <span class="close-modal">&times;</span>
             </div>
             <div class="modal-body">
-                <h2 class="modal-title">DataInsight</h2>
-                <div class="modal-subtitle">Plateforme d'analyse et visualisation de données</div>
+                <h2 class="modal-title">Prédire le prix d'une maison</h2>
+                <div class="modal-subtitle">Analyse de données prédictives</div>
                 
                 <div class="modal-section">
-                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du Projet</h3>
-                    <p class="modal-text">Créer une plateforme permettant aux entreprises d'importer, analyser et visualiser leurs données métier sans compétences techniques avancées.</p>
+                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du projet</h3>
+                    <p class="modal-text">Cette étude vise à mieux comprendre le fonctionnement du marché immobilier américain. Le but était de comparer la performance de plusieurs modèles prédictifs et de sélectionner le meilleur.</p>
                 </div>
                 
                 <div class="modal-section">
                     <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
-                    <p class="modal-text">Approche centrée utilisateur avec tests utilisateurs réguliers. Développement en Python avec intégration de bibliothèques de data science.</p>
+                    <p class="modal-text">Le jeu de données utilisé provient de Kaggle et a été constitué par Yasser H à partir d'informations collectées via Google. J'ai retenu les variables les plus pertinentes (superficie du logement, nombre de chambres, places de parking...). Modèles testés :</p>
                     <ul class="modal-list">
-                        <li>Collecte et prétraitement des données avec Pandas</li>
-                        <li>Analyse statistique avec Scikit-learn et Statsmodels</li>
-                        <li>Visualisations interactives avec Plotly et D3.js</li>
-                        <li>Interface utilisateur avec Streamlit</li>
-                        <li>Déploiement avec Docker sur AWS</li>
+                        <li>Régression logistique</li>
+                        <li>Régression Ridge</li>
+                        <li>Trois réseaux de neurones avec ajustement des hyperparamètres</li>
+                        <li>Comparaison des performances à l'aide de la RMSE et de l'accuracy afin de sélectionner le meilleur modèle</li>
                     </ul>
                 </div>
                 
                 <div class="modal-section">
-                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Technologies Utilisées</h3>
+                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Compétences mobilisées</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Scikit-learn</span>
-                        <span class="tech-tag">Streamlit</span>
-                        <span class="tech-tag">D3.js</span>
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Feature engineering</span>
+                        <span class="tech-tag">Réseaux de neuronnes</span>
+                        <span class="tech-tag">Optimisation des hyperparamètres</span>
+                        <span class="tech-tag">Validation croisée</span>
+                        <span class="tech-tag">Régression régularisée</span>
                     </div>
-                </div>
-                
-                <div class="action-buttons">
-                    <a href="#" class="action-button button-primary">
-                        <i class="fas fa-external-link-alt"></i>Voir la démo en ligne
-                    </a>
-                    <a href="#" class="action-button button-secondary">
-                        <i class="fas fa-file-pdf"></i>Télécharger le rapport technique
-                    </a>
-                    <a href="#" class="action-button button-secondary">
-                        <i class="fab fa-github"></i>Code source sur GitHub
-                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Projet 3 -->
+<!-- Modal Projet 3 -->
     <div class="modal" id="projet3Modal">
         <div class="modal-content">
             <div class="modal-header">
-                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="EcoTrack" class="modal-image">
+                <img src="/assets/images/presse.jpg" alt="Publicité presse" class="modal-image">
                 <span class="close-modal">&times;</span>
             </div>
             <div class="modal-body">
-                <h2 class="modal-title">EcoTrack</h2>
-                <div class="modal-subtitle">Application mobile de suivi d'empreinte écologique</div>
+                <h2 class="modal-title">La publicité dans la presse générale et professionnelle</h2>
+                <div class="modal-subtitle">Analyse de données descriptives</div>
                 
                 <div class="modal-section">
-                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du Projet</h3>
-                    <p class="modal-text">Développer une application mobile permettant aux utilisateurs de suivre et réduire leur empreinte carbone grâce à des défis écologiques et des conseils personnalisés.</p>
+                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du projet</h3>
+                    <p class="modal-text">Cette étude vise à tester l'hypothèse selon laquelle la presse générale, destinée à un public non spécialisé, traite la publicité sous un angle principalement sociétal, en questionnant son influence sur les consommateurs, tandis que la presse professionnelle, s'adressant aux acteurs du secteur, adopte un discours plus technique et économique, centré sur les stratégies, l'efficacité et les performances.</p>
                 </div>
                 
                 <div class="modal-section">
                     <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
-                    <p class="modal-text">Développement cross-platform avec React Native. Intégration d'APIs externes pour le calcul d'empreinte carbone.</p>
+                    <p class="modal-text">Pour ce faire, plusieurs méthodes de traitement automatique du langage ont été mobilisées :</p>
                     <ul class="modal-list">
-                        <li>Conception UX/UI avec Adobe XD</li>
-                        <li>Développement frontend avec React Native</li>
-                        <li>Backend en Firebase pour l'authentification et le stockage</li>
-                        <li>Intégration d'API de données environnementales</li>
-                        <li>Tests sur appareils iOS et Android</li>
+                        <li>Nettoyage et lemmatisation des textes, consistant à réduire les mots à leur forme de base.</li>
+                        <li>Techniques d'analyse sémantique telles que les word embeddings, la keyness analysis et la modélisation thématique (topic modeling).</li>
+                        <li>Reconnaissance d'entités nommées (NER), permettant d'identifier les acteurs, organisations et institutions mentionnés, ainsi que l'inférence en langage naturel (NLI), utilisée pour analyser les relations et positions exprimées dans les discours.</li>
                     </ul>
                 </div>
                 
                 <div class="modal-section">
-                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Technologies Utilisées</h3>
+                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Compétences mobilisées</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">React Native</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Redux</span>
-                        <span class="tech-tag">API REST</span>
-                        <span class="tech-tag">Jest</span>
-                        <span class="tech-tag">Expo</span>
+                        <span class="tech-tag">Nuage de mots</span>
+                        <span class="tech-tag">Word embeddings</span>
+                        <span class="tech-tag">Topic modelling</span>
+                        <span class="tech-tag">NLI</span>
+                        <span class="tech-tag">NER</span>
                     </div>
                 </div>
                 
                 <div class="action-buttons">
-                    <a href="#" class="action-button button-primary">
-                        <i class="fab fa-app-store"></i>Télécharger sur l'App Store
-                    </a>
-                    <a href="#" class="action-button button-primary">
-                        <i class="fab fa-google-play"></i>Télécharger sur Google Play
-                    </a>
-                    <a href="#" class="action-button button-secondary">
-                        <i class="fas fa-file-pdf"></i>Documentation du projet
+                    <h3 class="modal-section-title">Découvrir les résultats</h3>
+                    <a href="/assets/pdf/BRAUD-NOAILLY_GARIAZZO_LESAUVAGE_Presse_générale_Vs_professionnelle.pdf" class="action-button button-secondary">
+                        <i class="fas fa-file-pdf"></i>Rapport 
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Ajoutez les autres modals de la même manière -->
+    <!-- Modal Projet 4 -->
+    <div class="modal" id="projet4Modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/images/rodin.png" alt="Jeu Rodin" class="modal-image">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title">Jeu vidéo sur le sculpteur Rodin</h2>
+                <div class="modal-subtitle">Jeu vidéo</div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du projet</h3>
+                    <p class="modal-text">L'objectif de ce projet était de mettre en application les compétences en programmation acquises en première année de CPES. Afin de relier ce projet au cours d'histoire de l'art, le jeu se centre sur le sculpteur Rodin.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
+                    <p class="modal-text">Le projet a été réalisé sur une période de quatre jours intensifs. La carte du jeu a été conçue à l'aide du logiciel Tiled, permettant de structurer les niveaux et les déplacements du joueur. Les graphismes ont été dessinés spécifiquement pour le jeu pixel par pixel. Le développement du jeu a été réalisé en Python, en mobilisant les compétences acquises en programmation (gestion des interactions, déplacements, événements et logique de jeu).</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Compétences mobilisées</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Tiled</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 5 -->
+    <div class="modal" id="projet5Modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="/assets/images/france-us.webp" alt="Collaborations universitaires" class="modal-image">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title">Les collaborations universitaires entre la France et les États-Unis</h2>
+                <div class="modal-subtitle">Analyse de données</div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du projet</h3>
+                    <p class="modal-text">L'objectif est d'expliquer pourquoi certaines personnes rejettent les nouvelles technologies malgré leur diffusion croissante. 
+                        Le travail cherche à tester si ce rejet s'accentue avec le temps, s'il est lié à une méfiance envers les nouvelles technologies, et si la capacité d'adaptation des individus (exposition au changement) influence leur rapport à l'innovation.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
+                    <p class="modal-text">L'étude combine deux sources de données : le World Value Survey de 1981 à 2022 et un questionnaire original administré à 247 répondants. Deux types d'analyses statistiques ont été menés : une régression linéaire simple pour mesurer l'évolution des opinions dans le temps, puis une régression linéaire multivariée pour tester les hypothèses liées aux inquiétudes et à la capacité d'adaptation.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Compétences mobilisées</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Modélisation des données</span>
+                        <span class="tech-tag">Création de mesure statistiques</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <h3 class="modal-section-title">Découvrir les résultats</h3>
+                    <a href="/assets/pdf/projet V. Lepinay 🇺🇸.pdf" class="action-button button-secondary">
+                        <i class="fas fa-file-pdf"></i>Rapport 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 6 -->
+    <div class="modal" id="projet6Modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="/assets/images/porcelaine.jpg" alt="Porcelaines Sèvres" class="modal-image">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title">Étude du marché de la porcelaine de Sèvres</h2>
+                <div class="modal-subtitle">Analyse quantitative et qualitative</div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du projet</h3>
+                    <p class="modal-text">Cette étude offre un regard sur le marché de la porcelaine de Sèvres en mettant en perspectives un volet contemporain et historique. Le but était de produire une base de données sur le marché de la Porcelaine de Sèvres afin de contribuer à la communauté scientifique mais aussi, de mêler analyse quantitative et qualitative pour en tirer des connaissances.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
+                    <p class="modal-text">Cette étude repose sur une approche mixte, combinant analyses quantitatives, économétriques et qualitatives. Un corpus contemporain de 155 ventes aux enchères internationales (avril–octobre 2025) a été constitué manuellement à partir de catalogues de maisons de vente, puis nettoyé, standardisé et enrichi (lemmatisation des descriptions, harmonisation des dates et des prix). Des statistiques descriptives et des visualisations ont permis d'explorer les tendances du marché, avant la mise en œuvre de régressions hédoniques (OLS, modèles log-linéaires et régressions régularisées Elastic Net) afin d'identifier les déterminants du prix. Ce volet quantitatif a été complété par une analyse qualitative (étude des catalogues, stratégies de mise en valeur, entretiens avec une conservatrice et un collectionneur).</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Compétences mobilisées</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Collecte de données</span>
+                        <span class="tech-tag">Régressions</span>
+                        <span class="tech-tag">Analyse qualitative</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <h3 class="modal-section-title">Découvrir les résultats</h3>
+                    <a href="" class="action-button button-secondary">
+                        <i class="fas fa-file-pdf"></i>Rapport (en cours de pré-publication)
+                    </a>
+                    <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/6Q9AXS" target="_blank" class="action-button button-primary">
+                        <i class="fas fa-external-link-alt"></i>Jeux de données (Harvard)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 7 -->
+    <div class="modal" id="projet7Modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/images/coup-de-pousse.PNG" alt="Coup de Pousse" class="modal-image">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title">Coup de Pousse - Outil génératif de plan de jardinage</h2>
+                <div class="modal-subtitle">IA</div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du projet</h3>
+                    <p class="modal-text">Coup de pousse est un outil d'aide à la décision qui prend en compte les caractéristiques d'une surface végétalisable (type de sol, arrosage…) et propose une stratégie de jardinage adaptée. Coup de pousse permet à tout utilisateur (citoyen, jardinier urbain, ou collectivité) de :</p>
+                    <ul class="modal-list">
+                        <li>les caractéristiques d'un espace vert,</li>
+                        <li>une liste de plantes adaptées,</li>
+                        <li>d'indications pratiques d'entretien (arrosage, besoins du sol, exposition).</li>
+                    </ul>
+                    <p>L'enjeu ici est donc de proposer une interface utilisateur intuitive et épurée, pour permettre à l'utilisateur de naviguer facilement.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
+                    <p class="modal-text">Les données proviennent d'un jeu de données composé de 595 plantes. J'ai vérifié ces données, puis réalisé un travail de nettoyage et d'enrichissement : suppression des doublons, encodage des variables et ajout de nouvelles colonnes. Pour compléter ces informations, j'ai utilisé un Large Language Model (LLM), en itérant par petits groupes de plantes pour accélérer le traitement (parallélisation du LLM).</p>
+                    <p>Les photos ont été récupérées via l'API Pixabay et stockées sur Cloudinary afin de ne pas ralentir le site. Les liens vers ces images ont été ajoutés automatiquement au fichier JSON contenant les données.</p>
+                    <p>Le site propose un questionnaire interactif : les réponses sont comparées aux données du JSON grâce à une table de correspondance, et les plantes correspondantes s'affichent sous forme de cartes cliquables.</p>
+                    <p>Une fois la sélection faite, les informations sont envoyées à Gemini 2.5 Flash Lite, un LLM léger et rapide. Il renvoie les coordonnées des plantes dans le jardin au format JSON. Ces coordonnées sont ensuite converties en SVG puis en PNG pour le téléchargement. Ce choix de passer par des coordonnées JSON plutôt que la génération directe d'images par IA permet de réduire l'empreinte écologique du projet.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Compétences mobilisées</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Algorithmes de recommendation</span>
+                        <span class="tech-tag">Mapping</span>
+                        <span class="tech-tag">Prompt engineering</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <h3 class="modal-section-title">Découvrir les résultats</h3>
+                    <a href="https://www.kaggle.com/datasets/leslie17146/plants-their-characteristics-and-care" target="_blank" class="action-button button-primary">
+                        <i class="fas fa-external-link-alt"></i>Jeux de données (Kaggle)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 8 -->
+    <div class="modal" id="projet8Modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="/assets/images/badinter.avif" alt="Peine de Mort" class="modal-image">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title">L'opinion sur la peine de mort</h2>
+                <div class="modal-subtitle">Analyse de données</div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du projet</h3>
+                    <p class="modal-text">L'objectif est d'expliquer pourquoi certaines personnes rejettent les nouvelles technologies malgré leur diffusion croissante. 
+                        Le travail cherche à tester si ce rejet s'accentue avec le temps, s'il est lié à une méfiance envers les nouvelles technologies, et si la capacité d'adaptation des individus (exposition au changement) influence leur rapport à l'innovation.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
+                    <p class="modal-text">L'étude combine deux sources de données : le World Value Survey de 1981 à 2022 et un questionnaire original administré à 247 répondants. Deux types d'analyses statistiques ont été menés : une régression linéaire simple pour mesurer l'évolution des opinions dans le temps, puis une régression linéaire multivariée pour tester les hypothèses liées aux inquiétudes et à la capacité d'adaptation.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title"><i class="fas fa-tools"></i>Compétences mobilisées</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Algorithmes de recommendation</span>
+                        <span class="tech-tag">Mapping</span>
+                        <span class="tech-tag">Prompt engineering</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <h3 class="modal-section-title">Découvrir les résultats</h3>
+                    <a href="assets/pdf/report_LESAUVAGE05.pdf" class="action-button button-secondary">
+                        <i class="fas fa-file-pdf"></i>Rapport original (Anglais - PDF)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/mes_projets.js"></script>
 </body>
