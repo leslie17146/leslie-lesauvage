@@ -302,6 +302,9 @@ body {
 
 .modal-body {
     padding: 30px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
 }
 
 .modal-title {
@@ -337,21 +340,17 @@ body {
     font-size: 16px;
 }
 
-.modal-text {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 15px;
-}
-
 .modal-list {
     padding-left: 20px;
-    margin-bottom: 15px;
+    font-size: 15px;
+    padding: 15px;
+    line-height: 1.6;
+    color: #555;
 }
 
 .modal-list li {
     margin-bottom: 8px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #555;
 }
 
@@ -438,6 +437,112 @@ body {
     height: 100%;
     border: 0;
     border-radius: 12px;
+}
+
+/* Filtres desktop */
+.filters-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eaeaea;
+    text-align: left;
+}
+
+.filters-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}
+
+.filter-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: rgb(152, 152, 213);
+}
+
+/* Filtres mobiles */
+.mobile-filters {
+    position: relative;
+    margin-left: 10px;
+}
+
+.filter-toggle {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-toggle:hover {
+    background-color: #e0e0e0;
+}
+
+.filter-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    min-width: 150px;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-dropdown.show {
+    display: flex;
+}
+
+/* Animation pour les projets */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card.hidden {
+    display: none;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 767px) {
+    .mobile-header {
+        display: flex;
+        align-items: center;
+    }
+    
+    .page-title {
+        font-size: 18px;
+    }
+    
+    .filter-toggle {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 /* RESPONSIVE BREAKPOINTS */
