@@ -28,6 +28,20 @@
                     </div>
                 </div>
             </div>
+            <div class="filters-section">
+                <h3 class="filters-title">Filtrer par année</h3>
+                <div class="filter-options">
+                    <label class="filter-checkbox">
+                        <input type="checkbox" class="level-filter" value="L1" checked> L1
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" class="level-filter" value="L2" checked> L2
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" class="level-filter" value="L3" checked> L3 
+                    </label>
+                </div>
+            </div>
 
             
             <!-- Mobile back button -->
@@ -40,13 +54,31 @@
         <!-- Main content -->
         <div class="main-content">
             <!-- Mobile Header -->
-            <div class="mobile-header">
-                <div class="back-button" id="mobileBackButton">
-                    <i class="fas fa-arrow-left"></i>
-                </div>
-                <div class="page-title">Mes projets</div>
-                <img src="assets/images/Leslie Lesauvage.png" alt="Profil" class="profile-icon">
+        <div class="mobile-header">
+            <div class="back-button" id="mobileBackButton">
+                <i class="fas fa-arrow-left"></i>
             </div>
+            <div class="page-title">Mes projets</div>
+            <div class="mobile-header-right">
+                <img src="assets/images/Leslie Lesauvage.png" alt="Profil" class="profile-icon">
+                <div class="mobile-filters">
+                    <button class="filter-toggle" id="filterToggle">
+                        <i class="fas fa-filter"></i>
+                    </button>
+                    <div class="filter-dropdown" id="filterDropdown">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" class="level-filter-mobile" value="L1" checked> L1
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" class="level-filter-mobile" value="L2" checked> L2
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" class="level-filter-mobile" value="L3" checked> L3
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
 
             <!-- Mobile Categories -->
             <div class="categories mobile-only">
@@ -56,7 +88,7 @@
             <!-- Gallery -->
             <div class="gallery">
                 <!-- Projet 1 -->
-                <div class="project-card" data-modal="projet1">
+                <div class="project-card" data-modal="projet1" data-level="L1">
                     <img src="assets/images/casque-realite-virtuelle.jpg" alt="Opinion publique sur les nouvelles technologies" class="project-image">
                     <div class="project-date">2024</div>
                     <div class="project-info">
@@ -66,7 +98,7 @@
                 </div>
 
                 <!-- Projet 2 -->
-                <div class="project-card" data-modal="projet2">
+                <div class="project-card" data-modal="projet2" data-level="L2">
                     <img src="assets/images/houses.jpg" alt="Prédiction prix maison" class="project-image">
                     <div class="project-date">2024</div>
                     <div class="project-info">
@@ -76,7 +108,7 @@
                 </div>
 
                 <!-- Projet 3 -->
-                <div class="project-card" data-modal="projet3">
+                <div class="project-card" data-modal="projet3" data-level="L3">
                     <img src="/assets/images/presse.jpg" alt="Publicité presse" class="project-image">
                     <div class="project-date">2026</div>
                     <div class="project-info">
@@ -86,7 +118,7 @@
                 </div>
 
                 <!-- Projet 4 -->
-                <div class="project-card" data-modal="projet4">
+                <div class="project-card" data-modal="projet4" data-level="L1">
                     <img src="assets/images/rodin.png" alt="Jeu Rodin" class="project-image">
                     <div class="project-date">2024</div>
                     <div class="project-info">
@@ -96,7 +128,7 @@
                 </div>
 
                 <!-- Projet 5 -->
-                <div class="project-card" data-modal="projet5">
+                <div class="project-card" data-modal="projet5" data-level="L3">
                     <img src="/assets/images/france-us.webp" alt="Collaborations universitaires" class="project-image">
                     <div class="project-date">2026</div>
                     <div class="project-info">
@@ -106,7 +138,7 @@
                 </div>
 
                 <!-- Projet 6 -->
-                <div class="project-card" data-modal="projet6">
+                <div class="project-card" data-modal="projet6" data-level="L3">
                     <img src="/assets/images/porcelaine.jpg" alt="Porcelaines Sèvres" class="project-image">
                     <div class="project-date">2026</div>
                     <div class="project-info">
@@ -116,7 +148,7 @@
                 </div>
 
                 <!-- Projet 7 -->
-                <div class="project-card" data-modal="projet7">
+                <div class="project-card" data-modal="projet7" data-level="L3">
                     <img src="assets/images/coup-de-pousse.PNG" alt="Coup de Pousse" class="project-image">
                     <div class="project-date">2026</div>
                     <div class="project-info">
@@ -126,7 +158,7 @@
                 </div>
 
                 <!-- Projet 8 -->
-                <div class="project-card" data-modal="projet8">
+                <div class="project-card" data-modal="projet8" data-level="L1">
                     <img src="/assets/images/badinter.avif" alt="Peine de mort" class="project-image">
                     <div class="project-date">2024</div>
                     <div class="project-info">
@@ -381,9 +413,6 @@
                 
                 <div class="action-buttons">
                     <h3 class="modal-section-title">Découvrir les résultats</h3>
-                    <a href="" class="action-button button-secondary">
-                        <i class="fas fa-file-pdf"></i>Rapport (en cours de pré-publication)
-                    </a>
                     <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/6Q9AXS" target="_blank" class="action-button button-primary">
                         <i class="fas fa-external-link-alt"></i>Jeux de données (Harvard)
                     </a>
