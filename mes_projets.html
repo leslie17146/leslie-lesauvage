@@ -77,7 +77,7 @@
 
                 <!-- Projet 3 -->
                 <div class="project-card" data-modal="projet3">
-                    <img src="assets/images/presse.jpg" alt="Publicité presse" class="project-image">
+                    <img src="/assets/images/presse.jpg" alt="Publicité presse" class="project-image">
                     <div class="project-date">2026</div>
                     <div class="project-info">
                         <div class="project-title">La publicité dans la presse générale et professionnelle</div>
@@ -97,7 +97,7 @@
 
                 <!-- Projet 5 -->
                 <div class="project-card" data-modal="projet5">
-                    <img src="assets/images/france-us.webp" alt="Collaborations universitaires" class="project-image">
+                    <img src="/assets/images/france-us.webp" alt="Collaborations universitaires" class="project-image">
                     <div class="project-date">2026</div>
                     <div class="project-info">
                         <div class="project-title">Les collaborations universitaires entre les États-Unis et la France</div>
@@ -107,7 +107,7 @@
 
                 <!-- Projet 6 -->
                 <div class="project-card" data-modal="projet6">
-                    <img src="assets/images/porcelaine.jpg" alt="Porcelaines Sèvres" class="project-image">
+                    <img src="/assets/images/porcelaine.jpg" alt="Porcelaines Sèvres" class="project-image">
                     <div class="project-date">2026</div>
                     <div class="project-info">
                         <div class="project-title">Étude de marché des porcelaines de Sèvres</div>
@@ -127,7 +127,7 @@
 
                 <!-- Projet 8 -->
                 <div class="project-card" data-modal="projet8">
-                    <img src="assets/images/badinter.avif" alt="Peine de mort" class="project-image">
+                    <img src="/assets/images/badinter.avif" alt="Peine de mort" class="project-image">
                     <div class="project-date">2024</div>
                     <div class="project-info">
                         <div class="project-title">L'opinion sur la peine de mort</div>
@@ -232,7 +232,7 @@
     <div class="modal" id="projet3Modal">
         <div class="modal-content">
             <div class="modal-header">
-                <img src="assets/images/presse.jpg" alt="Publicité presse" class="modal-image">
+                <img src="/assets/images/presse.jpg" alt="Publicité presse" class="modal-image">
                 <span class="close-modal">&times;</span>
             </div>
             <div class="modal-body">
@@ -267,7 +267,7 @@
                 
                 <div class="action-buttons">
                     <h3 class="modal-section-title">Découvrir les résultats</h3>
-                    <a href="assets/pdf/BRAUD-NOAILLY_GARIAZZO_LESAUVAGE_Presse_générale_Vs_professionnelle.pdf" class="action-button button-secondary">
+                    <a href="/assets/pdf/BRAUD-NOAILLY_GARIAZZO_LESAUVAGE_Presse_générale_Vs_professionnelle.pdf" class="action-button button-secondary">
                         <i class="fas fa-file-pdf"></i>Rapport 
                     </a>
                 </div>
@@ -311,7 +311,7 @@
     <div class="modal" id="projet5Modal">
         <div class="modal-content">
             <div class="modal-header">
-                <img src="assets/images/france-us.webp" alt="Collaborations universitaires" class="modal-image">
+                <img src="/assets/images/france-us.webp" alt="Collaborations universitaires" class="modal-image">
                 <span class="close-modal">&times;</span>
             </div>
             <div class="modal-body">
@@ -320,26 +320,28 @@
                 
                 <div class="modal-section">
                     <h3 class="modal-section-title"><i class="fas fa-bullseye"></i>Objectif du projet</h3>
-                    <p class="modal-text">L'objectif est d'expliquer pourquoi certaines personnes rejettent les nouvelles technologies malgré leur diffusion croissante. 
-                        Le travail cherche à tester si ce rejet s'accentue avec le temps, s'il est lié à une méfiance envers les nouvelles technologies, et si la capacité d'adaptation des individus (exposition au changement) influence leur rapport à l'innovation.</p>
+                    <p class="modal-text">Cette étude vise à déterminer si la collaboration scientifique entre la France et les États-Unis génère des bénéfices asymétriques en termes de visibilité internationale, en testant l'hypothèse selon laquelle les chercheurs français tireraient un profit plus important de ces échanges que leurs homologues américains, mesuré par l'évolution du nombre et de la diversité de leurs collaborations internationales ultérieures.</p>
                 </div>
                 
                 <div class="modal-section">
                     <h3 class="modal-section-title"><i class="fas fa-cogs"></i>Méthodologie</h3>
-                    <p class="modal-text">L'étude combine deux sources de données : le World Value Survey de 1981 à 2022 et un questionnaire original administré à 247 répondants. Deux types d'analyses statistiques ont été menés : une régression linéaire simple pour mesurer l'évolution des opinions dans le temps, puis une régression linéaire multivariée pour tester les hypothèses liées aux inquiétudes et à la capacité d'adaptation.</p>
+                    <p class="modal-text">L'analyse s'appuie sur les données d'OpenAlex (1990-2025) pour quatre universités françaises aux profils de prestige différenciés selon le classement de Shanghai (PSL, Sorbonne Université, Université de Montpellier, Université Toulouse Capitole). Un script Python a collecté l'intégralité des publications des chercheurs français identifiés, puis, symétriquement, celles des chercheurs américains co-auteurs des mêmes publications. 
+                        Pour chaque chercheur, des indicateurs ont été construits manuellement afin de mesurer l'évolution du nombre moyen d'institutions partenaires par publication et la diversification géographique des collaborations avant/après la première collaboration franco-américaine.</p>
                 </div>
                 
                 <div class="modal-section">
                     <h3 class="modal-section-title"><i class="fas fa-tools"></i>Compétences mobilisées</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">Modélisation des données</span>
-                        <span class="tech-tag">Création de mesure statistiques</span>
+                        <span class="tech-tag">Collecte de données</span>
+                        <span class="tech-tag">API</span>
+                        <span class="tech-tag">Modélisation</span>
+                        <span class="tech-tag">Création de mesures statistiques</span>
                     </div>
                 </div>
                 
                 <div class="action-buttons">
                     <h3 class="modal-section-title">Découvrir les résultats</h3>
-                    <a href="assets/pdf/projet V. Lepinay 🇺🇸.pdf" class="action-button button-secondary">
+                    <a href="/assets/pdf/projet V. Lepinay 🇺🇸.pdf" class="action-button button-secondary">
                         <i class="fas fa-file-pdf"></i>Rapport 
                     </a>
                 </div>
@@ -351,7 +353,7 @@
     <div class="modal" id="projet6Modal">
         <div class="modal-content">
             <div class="modal-header">
-                <img src="assets/images/porcelaine.jpg" alt="Porcelaines Sèvres" class="modal-image">
+                <img src="/assets/images/porcelaine.jpg" alt="Porcelaines Sèvres" class="modal-image">
                 <span class="close-modal">&times;</span>
             </div>
             <div class="modal-body">
@@ -420,6 +422,16 @@
                     <p>Une fois la sélection faite, les informations sont envoyées à Gemini 2.5 Flash Lite, un LLM léger et rapide. Il renvoie les coordonnées des plantes dans le jardin au format JSON. Ces coordonnées sont ensuite converties en SVG puis en PNG pour le téléchargement. Ce choix de passer par des coordonnées JSON plutôt que la génération directe d'images par IA permet de réduire l'empreinte écologique du projet.</p>
                 </div>
                 
+                <div class="modal-video">
+                    <iframe 
+                        src="https://www.youtube.com/embed/i-S6XqEF6WU"
+                        title="Présentation Coup de Pousse"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
                 <div class="modal-section">
                     <h3 class="modal-section-title"><i class="fas fa-tools"></i>Compétences mobilisées</h3>
                     <div class="tech-tags">
@@ -443,7 +455,7 @@
     <div class="modal" id="projet8Modal">
         <div class="modal-content">
             <div class="modal-header">
-                <img src="assets/images/badinter.avif" alt="Peine de Mort" class="modal-image">
+                <img src="/assets/images/badinter.avif" alt="Peine de Mort" class="modal-image">
                 <span class="close-modal">&times;</span>
             </div>
             <div class="modal-body">
@@ -464,15 +476,14 @@
                 <div class="modal-section">
                     <h3 class="modal-section-title"><i class="fas fa-tools"></i>Compétences mobilisées</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">Algorithmes de recommendation</span>
-                        <span class="tech-tag">Mapping</span>
-                        <span class="tech-tag">Prompt engineering</span>
+                        <span class="tech-tag">Modélisation</span>
+                        <span class="tech-tag">Régression linéaire multivariée</span>
                     </div>
                 </div>
                 
                 <div class="action-buttons">
                     <h3 class="modal-section-title">Découvrir les résultats</h3>
-                    <a href="assets/pdf/report_LESAUVAGE05.pdf" class="action-button button-secondary">
+                    <a href="assets/pdf/LESAUVAGE04_rapport.pdf" class="action-button button-secondary">
                         <i class="fas fa-file-pdf"></i>Rapport original (Anglais - PDF)
                     </a>
                 </div>
@@ -483,4 +494,3 @@
     <script src="assets/js/mes_projets.js"></script>
 </body>
 </html>
-
