@@ -99,3 +99,78 @@ document.querySelectorAll('.modal').forEach(modal => {
     }, { passive: false });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Filtres desktop et mobile
+    const levelFilters = document.querySelectorAll('.level-filter');
+    const levelFiltersMobile = document.querySelectorAll('.level-filter-mobile');
+    const projectCards = document.querySelectorAll('.project-card');
+    const filterToggle = document.getElementById('filterToggle');
+    const filterDropdown = document.getElementById('filterDropdown');
+    
+    // État des filtres (tous cochés par défaut)
+    let activeFilters = {
+        L1: true,
+        L2: true,
+        L3: true
+    };
+    
+    // Fonction pour appliquer les filtres
+    function applyFilters() {
+        projectCards.forEach(card => {
+            const level = card.dataset.level;
+            if (activeFilters[level]) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    }
+    
+    // Synchroniser tous les filtres
+    function syncFilters() {
+        // Mettre à jour les checkboxes desktop
+        levelFilters.forEach(checkbox => {
+            checkbox.checked = activeFilters[checkbox.value];
+        });
+        
+        // Mettre à jour les checkboxes mobile
+        levelFiltersMobile.forEach(checkbox => {
+            checkbox.checked = activeFilters[checkbox.value];
+        });
+    }
+    
+    // Gestionnaire d'événements pour les filtres desktop
+    levelFilters.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            activeFilters[this.value] = this.checked;
+            syncFilters();
+            applyFilters();
+        });
+    });
+    
+    // Gestionnaire d'événements pour les filtres mobile
+    levelFiltersMobile.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            activeFilters[this.value] = this.checked;
+            syncFilters();
+            applyFilters();
+        });
+    });
+    
+    // Toggle du dropdown mobile
+    if (filterToggle && filterDropdown) {
+        filterToggle.addEventListener('click', function() {
+            filterDropdown.classList.toggle('show');
+        });
+        
+        // Fermer le dropdown en cliquant ailleurs
+        document.addEventListener('click', function(event) {
+            if (!filterToggle.contains(event.target) && !filterDropdown.contains(event.target)) {
+                filterDropdown.classList.remove('show');
+            }
+        });
+    }
+    
+    // Initialisation : tous les projets sont visibles
+    applyFilters();
+});
