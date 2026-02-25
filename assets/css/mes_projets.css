@@ -421,6 +421,25 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.modal-video {
+    position: relative;
+    padding-bottom: 56.25%; /* format 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+
+.modal-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 12px;
+}
+
 /* RESPONSIVE BREAKPOINTS */
 
 /* Desktop (à partir de 992px) */
