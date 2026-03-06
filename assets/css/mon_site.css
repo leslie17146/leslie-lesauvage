@@ -15,7 +15,7 @@ body {
 .container {
     display: flex;
     min-height: 100vh;
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -249,16 +249,16 @@ body {
     background-color: #fff;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     padding: 20px;
     border-left: 4px solid rgb(152, 152, 213);
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .card-header {
@@ -319,7 +319,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     justify-content: center;
     align-items: center;
@@ -333,56 +333,77 @@ body {
     max-width: 600px;
     max-height: 80vh;
     overflow-y: auto;
-    padding: 25px;
+    padding: 30px;
     position: relative;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
 .close-modal {
     position: absolute;
     top: 15px;
     right: 20px;
-    font-size: 24px;
+    font-size: 28px;
     color: #999;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
 }
 
 .close-modal:hover {
-    color: #666;
+    color: #333;
+    background-color: #f0f0f0;
 }
 
 .modal-title {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
     color: rgb(152, 152, 213);
+    line-height: 1.3;
 }
 
 .modal-subtitle {
     font-size: 16px;
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
 }
 
 .modal-date {
     font-size: 14px;
     color: #999;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .modal-section {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .modal-section-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 10px;
-    color: #333;
+    margin-bottom: 12px;
+    color: rgb(152, 152, 213);
+    display: flex;
+    align-items: center;
+}
+
+.modal-section-title i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.modal-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1em;
+    text-align: justify;
 }
 
 .modal-list {
@@ -392,7 +413,59 @@ body {
 
 .modal-list li {
     margin-bottom: 8px;
-    line-height: 1.4;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Action Buttons (pour les recommandations) */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: none;
+    text-align: center;
+}
+
+.action-button i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.button-primary {
+    background-color: rgb(152, 152, 213);
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: rgb(132, 132, 193);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(152, 152, 213, 0.3);
+}
+
+.button-secondary {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #e0e0e0;
+}
+
+.button-secondary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Section */
@@ -519,5 +592,25 @@ body {
     
     .modal-content {
         padding: 20px;
+    }
+    
+    .modal-title {
+        font-size: 20px;
+    }
+}
+
+/* Petit mobile (jusqu'à 480px) */
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 15px;
+    }
+    
+    .modal-title {
+        font-size: 18px;
+    }
+    
+    .action-button {
+        padding: 12px;
+        font-size: 14px;
     }
 }
